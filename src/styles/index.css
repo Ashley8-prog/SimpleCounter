@@ -14,16 +14,19 @@
 .bigCounter{
     text-align: center;
     background-color: black;
-   
+    font-family: 'Times New Roman', Times, serif;
+
 }
 
 .bigCounter div{
 display: inline-block;
 font-size: 60px;
 line-height: 60px;
-background-color: #101010;
+background-color: #070707;
 color: white;
-padding: 10px;
-margin: 5px;
-border: gray;
+padding: 30px;
+margin: 15px;
+/* border: 5px solid #545455; */
+border-radius: 10px;
+font-size: 50px;
 }

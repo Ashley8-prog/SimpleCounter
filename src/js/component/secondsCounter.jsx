@@ -50,13 +50,13 @@ const SecondsCounter = (props) => {
     return (
         <>
             <div className="container bigCounter">
-                <div>⏱</div>
-                <div><h1 className="col-2">{props.seconds6 ? sextonúmero(props.seconds6) : "0"}</h1></div>
-                <div> <h1 className="col-2">{props.seconds5 ? quintonúmero(props.seconds5) : "0"}</h1></div>
-                <div> <h1 className="col-2">{props.seconds4 ? cuartonúmero(props.seconds4) : "0"}</h1></div>
-                <div> <h1 className="col-2">{props.seconds3 ? tercernumero(props.seconds3) : "0"}</h1></div>
-                <div> <h1 className="col-2">{props.seconds2 ? segundonumero2(props.seconds2) : "0"}</h1></div>
-                <div> <h1 className="col-2">{props.seconds ? segundo(props.seconds) : "0"} </h1> </div>
+                <div><i class="far fa-clock"></i></div>
+                <div><h1 className="col-2">{sextonúmero(props.seconds6) > 0 ? sextonúmero(props.seconds6) : "0"}</h1></div>
+                <div> <h1 className="col-2">{quintonúmero(props.seconds5) > 0 ? quintonúmero(props.seconds5) : "0"}</h1></div>
+                <div> <h1 className="col-2">{cuartonúmero(props.seconds4) > 0 ? cuartonúmero(props.seconds4) : "0"}</h1></div>
+                <div> <h1 className="col-2">{ tercernumero(props.seconds3)> 0 ? tercernumero(props.seconds3) : "0"}</h1></div>
+                <div> <h1 className="col-2">{segundonumero2(props.seconds2) > 0 ? segundonumero2(props.seconds2) : "0"}</h1></div>
+                <div> <h1 className="col-2">{segundo(props.seconds) > 0 ? segundo(props.seconds) : "0"} </h1> </div>
             </div>
         </>
     )
